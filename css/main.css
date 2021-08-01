@@ -1,0 +1,242 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+    .container {
+        width: 950px;
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Component */
+
+    .main-heading  .text {
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 83px;
+    }
+    
+    .main-heading .text > h2 {
+        margin-bottom: 25px ;
+        font-size: 40px;
+        color: var(--main-color);
+    }
+    
+    .main-heading  .text {
+        color: var(--scd-color);
+    }
+
+    .main-heading  .text > p {
+        margin-bottom: 7px;
+    }
+
+    :root {
+        --main-color: hsl(210, 10%, 33%);
+        --scd-color: hsl(201, 11%, 66%)
+    }
+
+/* End Component */
+/* Start header */
+header {
+    background-image: url("/images/bg-header-desktop.png");
+    background-size: cover;
+    width: 100%;
+    opacity: 1
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50px);
+    top: 85px;
+}
+
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.left {
+    background-color:hsl(171, 66%, 44%) ;
+    padding: 16px 30px;
+    border-radius: 40px;
+    margin-right: 20px;
+    box-shadow: 0 -3px hsl(171, 62%, 40%) inset;
+}
+
+.right {
+    background-color:hsl(233, 100%, 69%) ;
+    padding: 16px 30px;
+    border-radius: 40px;
+    box-shadow: 0 -3px hsl(233, 57%, 58%) inset;
+}
+
+.right:hover , .left:hover {
+    opacity: 0.7;
+}
+
+/* End Header */
+/* Start Section */
+
+.original-features {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+section .features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px
+}
+
+section .features div {
+    margin-bottom: 40px;
+}
+
+section .features div h3 {
+    font-size: 26px; 
+    margin-bottom: 10px;
+}
+
+section .features div p {
+    color: var(--scd-color);
+    line-height: 1.7;
+}
+
+section img {
+    position: relative;
+    right: px;
+    
+}
+/* End Section */
+/* Start article */
+article .img {
+    display: grid;
+    place-items: center;
+}
+/* End article */
+/* Start Last Section */
+.three-boxes {
+    display: flex;
+    text-align: center;
+}
+
+.three-boxes div {
+    width: 33.3333%;
+}
+
+.three-boxes div img {
+    margin-bottom: 30px;
+    height: 44px
+}
+
+.three-boxes div h3 {
+    font-size: 25px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.three-boxes div p {
+    color: var(--scd-color);
+    line-height: 1.6;
+}
+
+.last-section .brands {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.last-section .brands img {
+    height : 40px
+}
+/* End last section */
+/* Start Footer  */
+footer {
+    background-color: hsl(142deg 4% 95% / 55%);
+    color: var(--main-color);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 150px;
+    height: 100px;
+}
+
+footer .info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.social img {
+    margin-right: 18px;
+    height: 30px;
+}
+
+footer div img {
+    height : 55px;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
